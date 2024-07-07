@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <style>
+        body{ background-color: rgb(179, 235, 245);}
+        table, tr ,th ,td{ border: 1px solid black;}
+        
+    </style>
+</head>
+<body >
+    <h1 style="text-align: center;">Day 2</h1>
+    <p style="text-align: center;">This is going to be Homework based </p>
+    <h3 style="color: burlywood;"><a href="/HTML/list.html">List Homework</a></h3>
+    <hr>
+    <h3><a href="/HTML/form.html">Form</a></h3>
+    <table  style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Sl no</th>
+                <th>Homework</th>
+                <th>Output</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>No 1</td>
+                <td>
+                    <ol type="i">
+                        <li>Roman 1</li>
+                        <li>Roman 2</li>
+                        <li>Roman 3</li>
+                        <li>Roman 4</li>
+                    </ol>
+                </td>
+                <td> 
+                    <img  src="/HTML/hmss.jpeg" alt="image"  width="300px" height="100px">
+                </td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>No 2</td>
+                <td>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                    </ul>
+                </td>
+                <td>
+                    <img  src="/HTML/hmss.jpeg" alt="image"  width="300px" height="100px">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> No 3 </td>
+                <td >
+                    <form action="">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Jhon"><br>
+                        <label for="lname">Last Name</label><br>  
+                        <input type="text" id="fname" name="lname"  placeholder="Doe"><br>
+                        <label for="desc">Description</label><br>
+                        <textarea name="desc" id="desc" rows="4" placeholder="Write About yourself"></textarea><br>
+                        <hr>
+                        <p>Select your Gender:</p>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label><br>
+                        <hr>
+                        <p>Hobbies</p>
+                        <input type="checkbox" name="read" id="read"><label for="read">Reading</label><br>
+                        <input type="checkbox" name="writing" id="writing"><label for="writing">Writing</label><br>
+                        <input type="checkbox" name="swiming" id="swiming"><label for="swiming">Swiming</label>
+                        <hr>
+                        <label for="date">Date of Birth</label><br>
+                        <input type="date" name="date" id="date">
+                        <hr>
+                        
+                        <label for="file">Submit your CV</label><br>
+                        <input type="file" name="file" id="file">
+                        
+                        <hr>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass">
+                        <hr>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
+                </td>
+                <td>
+                    <img src="/HTML/form.jpeg" alt="form" width="400px" height="500px">
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
