@@ -67,3 +67,14 @@ let totalProductByMachine = Math.round((machineNum + MachineAdd) * ProductPerMac
 let TotalProduct = 3 + totalProductByMachine;
 let ProductResult = "Total Product by Machine is"+" "+totalProductByMachine+" "+"if 3 more product is not sold then the count is"+" "+TotalProduct;
 console.log(ProductResult);
+
+// Problem 08
+// A shop Owner bought 120 chocolate and packaged 9 chocolates per packet. How many will be left after filling all packets?
+
+let chocolates = 120;
+let ChocsPerPack = 9;
+let PackNum = Math.round(chocolates/ChocsPerPack);
+let PackChocsTotal = PackNum * ChocsPerPack;
+let ChocsLeft = chocolates - PackChocsTotal;
+let chocolateResult = "After Filling all packets there are only"+" "+ChocsLeft+" "+"chocolates left.";
+console.log(chocolateResult);
