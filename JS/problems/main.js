@@ -35,3 +35,13 @@ let TreeResult = "Total Trees" + " " + TotalTrees + " " +  "in the Garden.";
 
 console.log(TreeResult);
 
+// Problem 05
+// Rahim has 5 boxes, each box has 10 oranges. He gave 12 to a friend. How many does he have?
+
+let RahimHasBox = 5;
+let OrangePerBox = 10;
+let GivenAway = 12;
+let totalOrange = (RahimHasBox * OrangePerBox) - GivenAway;
+let OrangeResult = "There are"+" "+totalOrange+" "+"left for Rahim.";
+
+console.log(OrangeResult);
