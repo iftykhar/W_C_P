@@ -45,3 +45,12 @@ let totalOrange = (RahimHasBox * OrangePerBox) - GivenAway;
 let OrangeResult = "There are"+" "+totalOrange+" "+"left for Rahim.";
 
 console.log(OrangeResult);
+
+// Problem 06
+// A Train Travels 150 Km in 3 hours. How many killometers does it travel in one hour?
+
+let TravelDistance = 150;
+let Hour = 3;
+let kmPerHour = TravelDistance/Hour;
+let TrainResult = "The Train Travels"+" "+kmPerHour+" "+"killometer in one hour.";
+console.log(TrainResult);
