@@ -15,3 +15,11 @@ let JhonSpent = 200;
 let JhonTotal = JhonHas - JhonSpent;
 let JhonMoney = "Jhon Has"+" "+JhonTotal+" "+"Tk.";
 console.log(JhonMoney);
+
+// Problem 03 
+// Factory makes 120 machine per hour. How many machines can be made in 8 hours?
+
+let MachinePerHour = 120;
+let TotalMachine = 8 * MachinePerHour;
+let MachineResult = "Total"+" "+TotalMachine+" "+"in 8 Hour.";
+console.log(MachineResult);
