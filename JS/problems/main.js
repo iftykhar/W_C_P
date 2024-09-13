@@ -54,3 +54,16 @@ let Hour = 3;
 let kmPerHour = TravelDistance/Hour;
 let TrainResult = "The Train Travels"+" "+kmPerHour+" "+"killometer in one hour.";
 console.log(TrainResult);
+
+// Problem 07
+// A Factory makes 200 product by using 6 machines.If 2 more machine added how many product can be made?
+// if 3 products is not sold how many product is there?
+
+let machineNum = 6;
+let ProductMade = 200;
+let MachineAdd = 2;
+let ProductPerMachine = ProductMade / machineNum;
+let totalProductByMachine = Math.round((machineNum + MachineAdd) * ProductPerMachine);
+let TotalProduct = 3 + totalProductByMachine;
+let ProductResult = "Total Product by Machine is"+" "+totalProductByMachine+" "+"if 3 more product is not sold then the count is"+" "+TotalProduct;
+console.log(ProductResult);
