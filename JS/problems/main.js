@@ -23,3 +23,15 @@ let MachinePerHour = 120;
 let TotalMachine = 8 * MachinePerHour;
 let MachineResult = "Total"+" "+TotalMachine+" "+"in 8 Hour.";
 console.log(MachineResult);
+
+// Problem 04
+// Garden has 12 trees per row.And has total 8 rows. Owner wants to plant 20 more trees.
+//How many trees in total?
+
+let TreePerRow = 12;
+let OldTreeNum = 8 * TreePerRow;
+let TotalTrees = 20 + OldTreeNum;
+let TreeResult = "Total Trees" + " " + TotalTrees + " " +  "in the Garden.";
+
+console.log(TreeResult);
+
