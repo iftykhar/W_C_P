@@ -73,3 +73,28 @@ console.log(pr10);
 let pr11 = ['first','second','third','fourth','fifth','sixth','seventh','eighth','nineth'];
 const pr11result = pr11.at(4);
 console.log(pr11result);
+
+// problem 12 longString = "apple banana cherry date elderberry fig grape honeydew kiwiw lemon mango nectraine orange papaya quince raspberry strawberry tangerine ugli vine watermelon yam zucchini apricot blackberry cantaloupe elderberry fennel grapefruit honeycrisp jackfruit kumquat line melon nectar olive peach pear plum pomegranate rhubrab starfruit tomato vanila"
+// find the index number of "fennel" from the variable longString
+
+let longString = "apple banana cherry date elderberry fig grape honeydew kiwi lemon mango nectraine orange papaya quince raspberry strawberry tangerine ugli vine watermelon yam zucchini apricot blackberry cantaloupe elderberry fennel grapefruit honeycrisp jackfruit kumquat line melon nectar olive peach pear plum pomegranate rhubrab starfruit tomato vanila";
+let longStringtoArray = longString.split(" ");
+let pr12Result = longString.indexOf("fennel"); 
+console.log(pr12Result  );
+
+
+// problem 13 array ['apple','banana','cherry','date','fig']
+// remove the last two elements and print the updated array
+// use pop() method.[you can use the method multiple time you need]
+
+let pr13 = ['apple','banana','cherry','date','fig'];
+pr13.pop();
+pr13.pop();
+console.log(pr13);
+
+// problem 14 array ['dog','cat','fish','bird']
+// Covert this array into a comma-separated string
+
+let pr14array = ['dog','cat','fish','bird'];
+const convertedArray = pr14array.toString(",");
+console.log(convertedArray);
