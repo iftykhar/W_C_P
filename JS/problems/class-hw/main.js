@@ -134,5 +134,28 @@ console.log(pr18result);
 // print updated array
 
 let pr19Array = ['a','b','c','d','e'];
-const pr19resutl = pr19Array.splice(0,2,"x","y");
-console.log(pr19resutl);
+pr19Array.splice(1,2,'x','y');
+console.log(pr19Array);
+
+
+// problem 20 array [10,20,30,40,50]
+// use slice() method to extract a subarray starting from index 1 and contain 3 elements
+let pr20Array =  [10,20,30,40,50];
+const pr20resutl = pr20Array.slice(1,-1);
+console.log(pr20resutl);
+
+// problem 21 array [1,2,3,4,5]
+// covert this array into string. Then use split() to convert it back incto array of strings.
+// print both the string and resulting array
+let pr21Array = [1,2,3,4,5];
+let pr21artostring = pr21Array.toString();
+console.log(pr21artostring);
+let pr21StringtoArray = pr21artostring.split(",");
+let pr21ArrayNumbers = pr21StringtoArray.map(Number);
+console.log(pr21ArrayNumbers);  
+// problem 22 array['a','b','c','d','e','f']
+// use the at() method to access and print the first and the last elements of the array.
+
+let pr22Array = ['a','b','c','d','e','f'];
+const pr22result = pr22Array.at(-1);
+console.log(pr22result);
