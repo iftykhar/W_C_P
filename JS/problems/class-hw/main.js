@@ -98,3 +98,41 @@ console.log(pr13);
 let pr14array = ['dog','cat','fish','bird'];
 const convertedArray = pr14array.toString(",");
 console.log(convertedArray);
+
+// problem 15 array['apple','orange','banana','grape']
+// create string with each element separated by a hyphen("-")
+
+let pr15Array = ['apple','orange','banana','grape'];
+const ppr15ArraytoString = pr15Array.join("-");
+console.log(ppr15ArraytoString);
+
+// problem 16 array['b','c','d']
+// add elements 'a','b' and 'c' to the begining of the array in a single call. print the updated array
+
+let pr16array = ['b','c','d'];
+pr16array.unshift('a','b','c');
+console.log(pr16array);
+
+// problem 17 array[1,2,3,4,5]
+// use delete operator to remove the element 4
+
+let pr17Array = [1,2,3,4,5];
+delete pr17Array[4];
+console.log(pr17Array);
+
+// problem 18 array [1,2,3] and [4,5,6]
+// merge these arrays and then use slice() to get the first 4 elements of the resulting array.
+
+const pr18Array1 =[1,2,3];
+const pr18Array2 = [4,5,6];
+let pr18Array = pr18Array1.concat(pr18Array2);
+let pr18result = pr18Array.slice(0,-2);
+console.log(pr18result);
+
+// problem 19 array['a','b','c','d','e']
+// remove 2 elements starting from index 1 and insert 'x' and 'y' in their place.
+// print updated array
+
+let pr19Array = ['a','b','c','d','e'];
+const pr19resutl = pr19Array.splice(0,2,"x","y");
+console.log(pr19resutl);
