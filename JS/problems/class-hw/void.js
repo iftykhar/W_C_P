@@ -64,9 +64,25 @@ for(let i =0; i<= 100; i++){
 
 // problem 06
 // 6.	Write a while loop that prints numbers from 1 to 20 but skips numbers divisible by 4 using the continue statement.
+let number = 1;
 
+while (number <= 20) {
+    if (number % 4 === 0) {
+        number++; 
+        console.log(number);
+        continue;
+    }
+    number++;
+}
 // problem 07
 // 7.	Use a while loop to print numbers in reverse order from 20 to 1.
+let n = 20;
+
+while(n >= 1){
+    console.log(n);
+    n--;
+    
+}
 
 // problem 08
 // 8.	Write a for loop that subtracts all the numbers in the array [20, 5, 8, 10, 3] starting with the first number (20). { loop diye korar try korben }
