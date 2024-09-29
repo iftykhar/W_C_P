@@ -85,10 +85,48 @@ while(n >= 1){
 }
 
 // problem 08
-// 8.	Write a for loop that subtracts all the numbers in the array [20, 5, 8, 10, 3] starting with the first number (20). { loop diye korar try korben }
+// 8.	Write a for loop that subtracts all the numbers in the array [20, 5, 8, 10, 3] starting with the first number (20). 
+
+const constarray = [20, 5, 8, 10, 3];
+let j = 1;
+let anum = constarray[0];
+while(j < constarray.length){
+   
+    anum = anum - constarray[j];
+    
+    j++;
+}
+
+console.log(anum);
+
 
 // problem 09 
 // 9.	Given the array [10, 20, 30, 40, 50], calculate the average of the numbers using a for loop.
 
+const array9 = [10, 20, 30, 40, 50];
+let sum = 0;
+
+
+for(let i = 0; i < array9.length; i++){
+    sum += array9[i];
+    
+    
+}
+let average = sum / array9.length;
+console.log(average);
+
+
+
 // problem 10
 // 10.	Write a program that iterates through numbers from 1 to 50. For each number, print "Even" if the number is divisible by 2, and "Odd" if it isn’t.
+
+for(let i = 0; i<=50; i++){
+    if (i % 2 == 0) {
+        console.log("Number " + i + " Even");
+        
+    }else{
+        console.log("Number " + i + " Odd");
+        
+    }
+    
+}
