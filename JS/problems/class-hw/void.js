@@ -69,10 +69,11 @@ let number = 1;
 while (number <= 20) {
     if (number % 4 === 0) {
         number++; 
-        console.log(number);
+        
         continue;
     }
     number++;
+    console.log(number);
 }
 // problem 07
 // 7.	Use a while loop to print numbers in reverse order from 20 to 1.
