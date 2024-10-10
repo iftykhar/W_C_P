@@ -5,3 +5,5 @@ function notice(param){
 }
 
 notice("testing");
+
+// js objects
