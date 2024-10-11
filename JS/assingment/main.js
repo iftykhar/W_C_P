@@ -29,10 +29,30 @@ function stringComparison( a , b){
 
 stringComparison(a,b);
 
-a = a.toLocaleLowerCase();
-console.log(a);
+// a = a.toLocaleLowerCase();
+// console.log(a);
 
 // 2. Write a function that takes a sentence and a word as input and checks if the word is present in the sentence using `includes()` and `indexOf()`. Return the index of the first occurrence or -1 if not found.
+
+function checkWordInSentence(sentence, word) {
+    // Use includes() to check if the word is present
+    if (sentence.includes(word)) {
+        // Use indexOf() to return the index of the first occurrence
+        return sentence.indexOf(word);
+    } else {
+        // Return -1 if the word is not found
+        return -1;
+    }
+}
+
+// Example usage
+const sentence = "The quick brown fox jumps over the lazy dog.";
+const word = "fox";
+
+const result = checkWordInSentence(sentence, word);
+console.log(result); // Output: 16 (index of 'fox')
+
+
 // 3. Create a function that checks whether a string starts with a specific substring using `startsWith()` and ends with another substring using `endsWith()`.
 // 4. Write a function that takes a sentence and splits it into an array of words using `split()`. Then, return the array of words.
 // 5. Create a function that extracts a portion of a string using both `slice()` and `substring()` methods. The start and end indices should be passed as arguments to the function.
