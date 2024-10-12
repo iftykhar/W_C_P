@@ -35,22 +35,22 @@ stringComparison(a,b);
 // 2. Write a function that takes a sentence and a word as input and checks if the word is present in the sentence using `includes()` and `indexOf()`. Return the index of the first occurrence or -1 if not found.
 
 function checkWordInSentence(sentence, word) {
-    // Use includes() to check if the word is present
+    
     if (sentence.includes(word)) {
-        // Use indexOf() to return the index of the first occurrence
         return sentence.indexOf(word);
     } else {
-        // Return -1 if the word is not found
         return -1;
     }
 }
 
-// Example usage
 const sentence = "The quick brown fox jumps over the lazy dog.";
 const word = "fox";
+let sn = 'what is this';
+let fin = 'is';
+const x = sn.includes(fin);
 
 const result = checkWordInSentence(sentence, word);
-console.log(result); // Output: 16 (index of 'fox')
+console.log(result); 
 
 
 // 3. Create a function that checks whether a string starts with a specific substring using `startsWith()` and ends with another substring using `endsWith()`.
