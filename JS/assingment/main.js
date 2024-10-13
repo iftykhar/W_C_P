@@ -45,16 +45,34 @@ function checkWordInSentence(sentence, word) {
 
 const sentence = "The quick brown fox jumps over the lazy dog.";
 const word = "fox";
-let sn = 'what is this';
-let fin = 'is';
-const x = sn.includes(fin);
 
 const result = checkWordInSentence(sentence, word);
 console.log(result); 
 
 
 // 3. Create a function that checks whether a string starts with a specific substring using `startsWith()` and ends with another substring using `endsWith()`.
+const fullSentence = "Good morning boys and good bye"
+
+function checkStringWith(fullSentence){
+    if(fullSentence.startsWith("Good") == true && fullSentence.endsWith("bye") == true){
+       return console.log("the sentence was started with Good and ended with Bye");
+        
+    }else{
+        return console.log("the sentence has different meaning");
+        
+    }
+}
+checkStringWith(fullSentence);
 // 4. Write a function that takes a sentence and splits it into an array of words using `split()`. Then, return the array of words.
+
+function srtingToArray(targetString){
+    const splitresult = targetString.split(" ");
+    return console.log(splitresult);
+    
+}
+
+
+
 // 5. Create a function that extracts a portion of a string using both `slice()` and `substring()` methods. The start and end indices should be passed as arguments to the function.
 // 6. Write a function that takes two strings and concatenates them using `concat()`. Also, demonstrate how to join an array of strings into a single string using `join()`.
 // 7. Write a function that takes a number and returns its absolute value using `Math.abs()`. Also, calculate the power of the number to another number using `Math.pow()`.
