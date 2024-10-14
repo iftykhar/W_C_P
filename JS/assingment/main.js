@@ -71,9 +71,11 @@ function srtingToArray(targetString){
     
 }
 
-
+const target = "what is going on ";
+srtingToArray(target);
 
 // 5. Create a function that extracts a portion of a string using both `slice()` and `substring()` methods. The start and end indices should be passed as arguments to the function.
+
 // 6. Write a function that takes two strings and concatenates them using `concat()`. Also, demonstrate how to join an array of strings into a single string using `join()`.
 // 7. Write a function that takes a number and returns its absolute value using `Math.abs()`. Also, calculate the power of the number to another number using `Math.pow()`.
 // 8. Create a function that takes a decimal number and rounds it to the nearest integer using `Math.round()`. Also, return the number rounded up using `Math.ceil()` and rounded down using `Math.floor()`.
