@@ -76,8 +76,65 @@ srtingToArray(target);
 
 // 5. Create a function that extracts a portion of a string using both `slice()` and `substring()` methods. The start and end indices should be passed as arguments to the function.
 
+function extracter(str ,start , end ){
+    let slicedPart = str.slice(start, end);
+    let substringPart = str.substring(start, end);
+    
+    // return {
+    //     slicedPart: slicedPart,
+    //     substringPart: substringPart
+    // };
+    return [slicedPart, substringPart];
+}
+
+const res = extracter("The quick brown fox", 4, 9);
+console.log("Slice result:", res[0]);        
+console.log("Substring result:", res[1]);
+
+
 // 6. Write a function that takes two strings and concatenates them using `concat()`. Also, demonstrate how to join an array of strings into a single string using `join()`.
+
+function twoStrings(one, two,array){
+    
+    let singlestr = one.concat(" ",two);
+    // console.log(singlestr);
+    let joinedString = array.join(" ");
+    console.log(singlestr, joinedString);
+    
+}
+
+twoStrings("hello","guys",[]);
+
 // 7. Write a function that takes a number and returns its absolute value using `Math.abs()`. Also, calculate the power of the number to another number using `Math.pow()`.
+
+function absPow(number,  power=1){
+
+    let resulting = Math.abs(number);
+    let powerRes = Math.pow(resulting, power);
+
+    return console.log("this is the result "+ powerRes);
+    
+}
+absPow(-9);
 // 8. Create a function that takes a decimal number and rounds it to the nearest integer using `Math.round()`. Also, return the number rounded up using `Math.ceil()` and rounded down using `Math.floor()`.
+
+function decimalToInteger( num){
+
+    let round = Math.round(num);
+    let ceil = Math.ceil(round);
+    let floor = Math.floor(ceil);
+    
+    return console.log("The number is "+ floor);
+    
+}
+
+decimalToInteger(2.48);
 // 9. Write a function that generates a random number between two given numbers using `Math.random()` and ensures that the result is a whole number.
-// 
+
+function RandomNumGen(min , max  ){
+
+    let random = Math.floor(Math.random() * (max - min + 1)) + min;
+    return random;
+}
+
+RandomNumGen(100,80);
