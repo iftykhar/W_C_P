@@ -29,8 +29,6 @@ function stringComparison( a , b){
 
 stringComparison(a,b);
 
-// a = a.toLocaleLowerCase();
-// console.log(a);
 
 // 2. Write a function that takes a sentence and a word as input and checks if the word is present in the sentence using `includes()` and `indexOf()`. Return the index of the first occurrence or -1 if not found.
 
