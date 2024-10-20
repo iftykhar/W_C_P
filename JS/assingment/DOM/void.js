@@ -7,7 +7,11 @@ alertbtn.addEventListener('click', ()=>{
 })
 
 let addOne = document.getElementById('addone');
+let increaseBtn = document.getElementById('increase');
 
-addOne.addEventListener('click', ()=>{
-    addOne.innerText = 1;
+increaseBtn.addEventListener('click', ()=>{
+    let count = parseInt(addOne.innerText, 10);;
+    count += 1;
+    addOne.innerText = '';
+    addOne.innerText = count;
 })
