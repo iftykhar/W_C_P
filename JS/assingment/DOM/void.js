@@ -31,18 +31,7 @@ togglebtn.addEventListener('click', ()=>{
 
 })
 
-// let modechange = document.getElementById('modechange');
 
-// modechange.addEventListener('click',()=>{
-    
-//     let blackbg = body.style.backgroundColor = 'black';
-//     let  whitetext = body.style.color = 'white';
-
-//     if(blackbg != blackbg){
-//         console.log('asdfasdf');
-        
-//     }
-// })
 
 let modechange = document.getElementById('modechange');
 let Mode = false; 
