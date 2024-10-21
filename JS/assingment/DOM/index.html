@@ -6,9 +6,106 @@
     <title>Home DOM Work</title>
 </head>
 <body>
-    <h1 id="h1">Welcome To JS DOM Test!</h1>
+    <h1 id="h" > Welcome To JS DOM Test!</h1>
 
+    <div class="" >
+        <div class="box" >
+            <h1>    List of books    </h1>
+            <ul>
+                <li>book name 1</li>
+                <li>book name 2</li>
+                <li>book name 3</li>
+                <li>book name 4</li>
+                <li>book name 5</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>    List of books    </h1>
+            <ul>
+                <li>book name 1</li>
+                <li>book name 2</li>
+                <li>book name 3</li>
+                <li>book name 4</li>
+                <li>book name 5</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>    List of books    </h1>
+            <ul>
+                <li>book name 1</li>
+                <li>book name 2</li>
+                <li>book name 3</li>
+                <li>book name 4</li>
+                <li>book name 5</li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="" id="newdiv">
+        <div class="box">
+            <h1>    List of books    </h1>
+            <ul>
+                <li>book name 1</li>
+                <li>book name 2</li>
+                <li>book name 3</li>
+                <li>book name 4</li>
+                <li>book name 5</li>
+            </ul>
+        </div>
+       
+    </div>
     
+
+    <script>
+        let body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = "orange";
+        body.style.padding = '10px 20px';
+
+        let h1 = document.getElementById("h");
+        h1.style.textAlign = 'center';
+        h1.style.padding = '5px 0'
+        // h1.style.width = '50%'
+        h1.style.backgroundColor = 'red';
+        h1.style.color = "white";
+
+        let boxes = document.getElementsByClassName('box');
+
+        for (let box of boxes) {
+            box.style.backgroundColor = 'white';
+            box.style.padding = ' 5px';
+            box.style.margin = '2px'
+            box.style.border = '3px solid black'
+            box.style.margin = '10px 0';
+            box.style.float = 'left';
+            box.style.width = '30%';
+        }
+
+        let newDiv = document.createElement('div');
+        let divH1 = document.createElement('h1');
+        let ul = document.createElement('ul');
+        let list = document.createElement('li');
+
+        
+        divH1.innerText = 'List of Books';
+        list.innerText = 'book name 1';
+
+        
+        newDiv.appendChild(divH1);
+        newDiv.appendChild(ul);
+        ul.appendChild(list);
+
+       
+        newDiv.style.backgroundColor = 'white';
+        newDiv.style.padding = '5px';
+        newDiv.style.margin = '10px 0';
+        newDiv.style.border = '3px solid black';
+        newDiv.style.float = 'left';
+        newDiv.style.width = '30%';
+
+        // Append the new div to the body or a specific parent
+        document.getElementById('newdiv').appendChild(newDiv);
+        
+    </script>
 <script src="./main.js"></script>
 </body>
 </html>
