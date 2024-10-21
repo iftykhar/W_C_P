@@ -15,3 +15,7 @@ increaseBtn.addEventListener('click', ()=>{
     addOne.innerText = '';
     addOne.innerText = count;
 })
+
+
+let togglebtn = document.getElementById('togglebtn');
+
