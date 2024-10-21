@@ -7,31 +7,88 @@
 </head>
 <body>
 
-    <div class="">
-        <!-- Create a button that, when clicked, shows alert button is clicked -->
-        <button id="alertbtn">Alert</button>
-    </div>
-    <div class="">
-        <!-- Create a simple webpage with a button. when then button is clicked, a counter displayed on the page should increase by one. -->
-        <table style="border: 2px solid red;"> 
-            <thead>
-                <th>
-                    <td>Count :</td>
-                    <td id="addone" >0</td>
-                </th>
-            </thead>
+
+    <table style="border: 2px solid rgb(75, 186, 219); width: 100%;">
+        <thead style="border: 2px solid rgb(75, 186, 219); width: 100%;">
+            <tr>
+                <th>Alert Button</th>
+                <th>Counter</th>
+                <th>Toggle Text</th>
+                <th>Dark/Light Mode</th>
+            </tr>
+        </thead>
+        <tbody style="border: 2px solid rgb(75, 186, 219); width: 100%;">
+            <tr>
+                <td>
+                    <div class="" style="text-align: center;">
+                        <!-- Create a button that, when clicked, shows alert button is clicked -->
+                        <button id="alertbtn">Alert</button>
+                    </div>
+                </td>
+           
+                <td>
+                    <div class="" style="text-align: center;" >
+                        <!-- Create a simple webpage with a button. when then button is clicked, a counter displayed on the page should increase by one. -->
+                        <table style="border: 2px solid red;"> 
+                            <thead>
+                                <th>
+                                    <td>Count :</td>
+                                    <td id="addone" >0</td>
+                                </th>
+                            </thead>
+                            
+
+                        </table>
+                        <button id="increase"> Add count one </button>
+                    </div>                      
+                </td>
+                <td>
+                    <div class="" style="text-align: center;">
+                        <!-- create a button that toggles between showing and hiding a block of text -->
+                        <p id="tglewrd">Lorem ipsum dolor sit amet.</p>
+                        <button id="togglebtn">Toggle</button>
+                
+                    </div>
+                </td>
+                <td>
+                    <div class="" style="text-align: center;">
+                        <!-- create a button that toggles between dark mode and light mode when clicked -->
+                       <button id="modechange">Mode Change</button>
+                   </div>
+               
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <div class="" style="align-items: center;" > 
+        <table style="border: 2px solid rgb(75, 186, 219); width: 75%;">
+            <!-- create a simple calculator using two input fields and a button. When the button is clicked show the summetion of entered numbers -->
+            <tr>
+                <td>
+                    <label for="fnumber">First Number</label><input id="fnumber" name="fnumber" type="number">
+                </td>
+                <td>
+                    <label for="lnumber">Second Number</label><input id="lnumber" name="lnumber" type="number">
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>
+                    <button id="sum">Add</button>
+                </td>
+                <td>
+                    <p id="sumshow"></p>
+                </td>
+            </tr>
             
-
         </table>
-        <button id="increase"> Add count one </button>
     </div>
-    <div class="">
-        <!-- create a button that toggles between showing and hiding a block of text -->
-        <p><b>Lorem ipsum dolor sit amet.</b></p>
-        <button id="togglebtn">Toggle</button>
-
-    </div>
-
+   
+    
+    
     <script src="./void.js"></script>
 </body>
 </html>

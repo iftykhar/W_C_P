@@ -19,3 +19,57 @@ increaseBtn.addEventListener('click', ()=>{
 
 let togglebtn = document.getElementById('togglebtn');
 
+let tglewrd = document.getElementById('tglewrd');
+let tglewrdvalue = tglewrd.innerText;
+
+togglebtn.addEventListener('click', ()=>{
+    if(tglewrd.innerText != ""){
+        tglewrd.innerText = "";
+    }else if(tglewrd.innerText == "" ){
+        tglewrd.innerText = tglewrdvalue;
+    }
+
+})
+
+// let modechange = document.getElementById('modechange');
+
+// modechange.addEventListener('click',()=>{
+    
+//     let blackbg = body.style.backgroundColor = 'black';
+//     let  whitetext = body.style.color = 'white';
+
+//     if(blackbg != blackbg){
+//         console.log('asdfasdf');
+        
+//     }
+// })
+
+let modechange = document.getElementById('modechange');
+let Mode = false; 
+
+modechange.addEventListener('click', () => {
+    if (Mode) {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+
+    } else {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+
+    }
+    
+    Mode = !Mode; 
+});
+
+
+let fnumber = document.getElementById('fnumber');
+let lnumber = document.getElementById('lnumber');
+let sum = document.getElementById('sum');
+let sumshow = document.getElementById('sumshow');
+
+sum.addEventListener('click', ()=>{
+    let total = Number(fnumber.value) + Number(lnumber.value);
+
+   sumshow.innerText = `The summation of first and second number is ${total}`;
+    
+})
