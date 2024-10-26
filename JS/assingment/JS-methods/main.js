@@ -41,11 +41,53 @@ console.log(mas);
 
 //  5.  Create an object with properties name, age, and country, and use destructuring to extract them into variables. Also, destructure an array of five numbers to get the first two elements.
 
+let citizen = { 
+    name:"sinwar",
+    age:63,
+    country:"palestine",
 
+ }
 
+ let citizenCountry = citizen.country;
 
+ let FiveArr = ['one','two','three','four','five'];
+
+ let FiveArrFirstTwo = `${FiveArr[0]} ${FiveArr[1]}`;
+ console.log(FiveArrFirstTwo);
+ 
 //  6.  Access the city property of a nested object using both dot notation and optional chaining.
+
+
+
 //  7.  Given an array of student objects with properties name and marks, use:map() to extract the names.
+
+let students = [
+   { 
+    name:"sakib",
+    makrs:95,
+    bloodgroup:"AB+"
+   },
+   { 
+    name:"Rakib",
+    makrs:70,
+    bloodgroup:"A+"
+   },
+   { 
+    name:"Hasan",
+    makrs:55,
+    bloodgroup:"B+"
+   },
+   { 
+    name:"sakib",
+    makrs:95,
+    bloodgroup:"AB+"
+   }
+];
+
+let result = students.map(students => students.name);
+console.log(result);
+
+
 //  8.  filter() to return students with marks above 80.
 //  9.  find() to get the first student with marks over 90.
 //  10.  Use forEach() on an array of objects (e.g., products with name and price) to log a message with each product's details.
