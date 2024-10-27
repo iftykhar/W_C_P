@@ -57,7 +57,21 @@ let citizen = {
  
 //  6.  Access the city property of a nested object using both dot notation and optional chaining.
 
+citizen = { 
+    name:"sinwar",
+    age:63,
+    country:"palestine",
+    address: {
+        city: "Gaza",
+        street: "Al-Shuhada St."
+    }
+ }
 
+ let cityDotNotation = citizen.address.city;
+console.log(cityDotNotation); 
+
+let cityOptionalChaining = citizen?.address?.city;
+console.log(cityOptionalChaining);
 
 //  7.  Given an array of student objects with properties name and marks, use:map() to extract the names.
 
@@ -78,8 +92,8 @@ let students = [
     bloodgroup:"B+"
    },
    { 
-    name:"sakib",
-    makrs:95,
+    name:"rajjak",
+    makrs:85,
     bloodgroup:"AB+"
    }
 ];
@@ -89,7 +103,21 @@ console.log(result);
 
 
 //  8.  filter() to return students with marks above 80.
+
+let Highmarks = students.filter(student => student.makrs >= 80);
+console.log(Highmarks);
+
+
 //  9.  find() to get the first student with marks over 90.
+
+let OneHighMark = students.find(students => students.makrs >= 80);
+console.log(OneHighMark);
+
+
 //  10.  Use forEach() on an array of objects (e.g., products with name and price) to log a message with each product's details.
+
+
+
 //  11.  Use map() on a string array to create a new array where each string is prefixed with "Hello, ".
 //  12. Given an array of objects, use filter() to return all objects where a specific condition is met (e.g., products priced above a certain amount).
+
