@@ -116,8 +116,34 @@ console.log(OneHighMark);
 
 //  10.  Use forEach() on an array of objects (e.g., products with name and price) to log a message with each product's details.
 
+let ShopProduct = [
+    {name:"Horlicks",price:300},
+    {name:"Bornvite",price:400},
+    {name:"Chocolet",price:600},
+    {name:"Harpic",price:500}
 
+];
 
+ShopProduct.forEach(product=>{
+    console.log(`Product: ${product.name}, Price: ${product.price}`);
+    
+})
 //  11.  Use map() on a string array to create a new array where each string is prefixed with "Hello, ".
+
+let newArray = [
+    "Astma",
+    "Bronchitis",
+    "Artheisis"
+];
+
+let greetedArray = newArray.map(item => "Hello" + item)
+
+console.log(greetedArray);
+
 //  12. Given an array of objects, use filter() to return all objects where a specific condition is met (e.g., products priced above a certain amount).
+
+
+let AgradeStudent = students.filter((student) => student.makrs >= 80);
+
+console.log(AgradeStudent);
 
