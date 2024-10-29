@@ -13,24 +13,21 @@
           font-family: Arial, Helvetica, sans-serif;
         }
         
-        /* Float four columns side by side */
         .column {
           float: left;
           width: 25%;
-          padding: 10px 10px;
+          padding: 3px 10px;
         }
-        
-        /* Remove extra left and right margins, due to padding */
+          
         .row {margin: 0 -5px;}
-        
-        /* Clear floats after the columns */
+         
         .row:after {
           content: "";
           display: table;
           clear: both;
         }
         
-        /* Responsive columns */
+
         @media screen and (max-width: 600px) {
           .column {
             width: 100%;
@@ -39,7 +36,7 @@
           }
         }
         
-        /* Style the counter cards */
+        
         .card {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           padding: 16px;
@@ -53,22 +50,41 @@
     <br>
     
     <div class="row">
-        <div class="column">
+        <!-- <div class="column">
           <div class="card">
             <h3>Card 1</h3>
             <p>Some text</p>
             <p>Some text</p>
           </div>
-        </div>
-        
-      
-        
+        </div> -->
+
+        <br>
     </div>
 
     <script>
 
+      
+        const rowContainer = document.querySelector('.row');
 
-        
+        fetch('https://dummyjson.com/products')
+            .then(response => response.json())
+            .then(data => {
+                // Generate card HTML for each product and add it to the row container
+                const columnsHtml = data.products.map(item => `
+                    <div class="column">
+                        <div class="card">
+                            <img src="${item.thumbnail}" style="height: 200px; width: 200px;" alt="${item.title}">
+                            <b>${item.title}</b>
+                            <p>${item.description}</p>
+                        </div>
+                        <br>
+                    </div>
+                `).join('');
+
+                rowContainer.innerHTML = columnsHtml;
+            })
+            
+
 
     </script>
 </body>
