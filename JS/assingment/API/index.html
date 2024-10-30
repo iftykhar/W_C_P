@@ -11,6 +11,7 @@
         
         body {
           font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
         }
         
         .column {
@@ -19,7 +20,12 @@
           padding: 3px 10px;
         }
           
-        .row {margin: 0 -5px;}
+        .row {
+          margin: 0 -5px;
+          text-align: center;
+          align-items: center;
+        
+        }
          
         .row:after {
           content: "";
@@ -42,6 +48,11 @@
           padding: 16px;
           text-align: center;
           background-color: #f1f1f1;
+        }
+
+        .card p{
+          text-align: center;
+          align-items: center;
         }
         </style>
 </head>
@@ -69,11 +80,12 @@
         fetch('https://dummyjson.com/products')
             .then(response => response.json())
             .then(data => {
-                // Generate card HTML for each product and add it to the row container
+                
                 const columnsHtml = data.products.map(item => `
                     <div class="column">
                         <div class="card">
                             <img src="${item.thumbnail}" style="height: 200px; width: 200px;" alt="${item.title}">
+                            <br>
                             <b>${item.title}</b>
                             <p>${item.description}</p>
                         </div>
